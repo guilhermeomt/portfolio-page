@@ -1,0 +1,30 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 24px;
+  margin-bottom: 34px;
+  align-items: center;
+}
+
+.intro__photo {
+  width: 174px;
+  height: 180px;
+}
+
+.intro__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 0;
+}
+
+.intro__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 0;
+}

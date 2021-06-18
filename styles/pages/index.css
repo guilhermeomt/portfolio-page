@@ -2,4 +2,5 @@
 @import '../utils/general.css';
 
 @import '../components/navbar.css';
+@import '../components/intro.css';
 @import '../components/button.css';

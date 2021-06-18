@@ -1,2 +1,4 @@
 @import '../utils/variables.css';
 @import '../utils/general.css';
+
+@import '../components/navbar.css';

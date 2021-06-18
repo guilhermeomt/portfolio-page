@@ -1,0 +1,6 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 18px 12px 18px;
+}

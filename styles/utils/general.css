@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 375px;
+    margin: 0 auto;
+  }
+}

@@ -6,6 +6,18 @@
   padding: 0 18px;
 }
 
+.portfolio-item__link {
+  color: var(--color-text);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.portfolio-item__link:visited,
+.portfolio-item__link:focus {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
 .portfolio-item__img {
   height: 230px;
   width: 339px;

@@ -1,0 +1,30 @@
+.post-card {
+  background-color: var(--color-white);
+  padding: 12px 20px 22px;
+  margin-bottom: 19px;
+}
+
+.post-card__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+}
+
+.post-card__description {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.post-card__description > span {
+  color: var(--color-black);
+}
+
+.post-card__content {
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}

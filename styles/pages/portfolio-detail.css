@@ -1,0 +1,6 @@
+@import '../utils/variables.css';
+@import '../utils/general.css';
+
+@import '../components/navbar.css';
+@import '../components/portfolio-detail.css';
+@import '../components/footer.css';

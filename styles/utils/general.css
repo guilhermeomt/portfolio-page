@@ -20,6 +20,10 @@ body {
   color: var(--color-text);
 }
 
+.bg-aqua {
+  background-color: var(--color-aqua);
+}
+
 @media only screen and (min-width: 768px) {
   body {
     width: 375px;

@@ -4,3 +4,5 @@
 @import '../components/navbar.css';
 @import '../components/portfolio-detail.css';
 @import '../components/footer.css';
+
+@import '../utils/responsive.css';

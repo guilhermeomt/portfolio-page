@@ -4,6 +4,7 @@
 }
 
 @media screen and (min-width: 992px) {
+  /* Navbar */
   .navbar {
     padding: 0;
   }
@@ -14,5 +15,38 @@
 
   .navbar__list.hide-to-mobile {
     display: flex;
+  }
+
+  /* Intro */
+  .intro {
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .intro__photo {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+
+  .intro__content {
+    max-width: 470px;
+  }
+
+  .intro__title,
+  .intro__subtitle {
+    text-align: left;
+  }
+
+  .intro__title {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+  }
+
+  .intro__content .button {
+    align-self: flex-start;
+    margin-top: 50px;
   }
 }

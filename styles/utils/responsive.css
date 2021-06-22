@@ -1,0 +1,18 @@
+.hide-to-mobile,
+.hide-to-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__list.hide-to-mobile {
+    display: flex;
+  }
+}

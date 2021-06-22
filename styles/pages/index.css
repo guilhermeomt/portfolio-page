@@ -9,3 +9,5 @@
 @import '../components/portfolio.css';
 @import '../components/portfolio-item.css';
 @import '../components/footer.css';
+
+@import '../utils/responsive.css';

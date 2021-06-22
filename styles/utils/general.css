@@ -31,10 +31,3 @@ body {
   background-color: var(--color-gray);
   border: none;
 }
-
-@media only screen and (min-width: 768px) {
-  body {
-    width: 375px;
-    margin: 0 auto;
-  }
-}

@@ -49,4 +49,28 @@
     align-self: flex-start;
     margin-top: 50px;
   }
+
+  /* Blog Posts */
+  .blog-posts {
+    width: 50%;
+    min-width: 617px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .blog-posts__title {
+    align-self: flex-start;
+    font-size: 22px;
+  }
+
+  .blog-posts__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .post-card {
+    max-width: 360px;
+    padding: 24px 22px;
+  }
 }

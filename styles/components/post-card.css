@@ -2,6 +2,7 @@
   background-color: var(--color-white);
   padding: 12px 20px 22px;
   margin-bottom: 19px;
+  border-radius: 5px;
 }
 
 .post-card__title {

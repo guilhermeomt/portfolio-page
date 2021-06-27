@@ -13,11 +13,11 @@
   align-items: center;
 }
 
-.footer__link {
-  text-decoration: none;
+.footer__icon path {
+  fill: var(--color-text);
 }
 
-.footer__copy {
+.footer__link .footer__copy {
   font-size: 14px;
   line-height: 21px;
   text-align: center;

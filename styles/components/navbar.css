@@ -25,11 +25,13 @@
 }
 
 .navbar__link {
+  position: relative;
   font-size: 20px;
   font-weight: 500;
   color: var(--color-text);
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .navbar__link:visited,
@@ -37,4 +39,21 @@
 .navbar__link:focus {
   text-decoration: none;
   color: var(--color-text);
+}
+
+.navbar__link::after {
+  content: '';
+  border-bottom: solid 4px var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s;
+}
+
+.navbar__link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
 }

@@ -1,5 +1,6 @@
 @import '../utils/variables.css';
 @import '../utils/general.css';
+@import '../utils/animations.css';
 
 @import '../components/navbar.css';
 @import '../components/intro.css';
@@ -11,3 +12,4 @@
 @import '../components/footer.css';
 
 @import '../utils/responsive.css';
+@import '../themes/dark.css';

@@ -6,9 +6,31 @@
   align-items: center;
 }
 
+.intro__img {
+  position: relative;
+}
+
 .intro__photo {
   width: 174px;
   height: 180px;
+}
+
+.intro__circle {
+  position: absolute;
+  bottom: 0px;
+  left: -5px;
+  width: 174px;
+  height: 180px;
+  background-color: var(--color-aqua);
+  border-radius: 50%;
+  z-index: -5;
+}
+
+.intro__photo::after {
+  content: '';
+  display: block;
+  width: 243px;
+  height: 243px;
 }
 
 .intro__content {

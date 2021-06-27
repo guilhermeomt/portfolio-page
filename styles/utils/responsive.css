@@ -1,3 +1,4 @@
+.hide,
 .hide-to-mobile,
 .hide-to-desktop {
   display: none;
@@ -30,6 +31,12 @@
     margin-bottom: 50px;
   }
 
+  .intro__circle {
+    width: 243px;
+    height: 243px;
+    bottom: 50px;
+  }
+
   .intro__content {
     max-width: 470px;
   }
@@ -52,8 +59,8 @@
 
   /* Blog Posts */
   .blog-posts {
-    width: 50%;
-    min-width: 617px;
+    width: 100%;
+    max-width: 844px;
     justify-content: center;
     margin: 0 auto;
   }
@@ -76,8 +83,8 @@
 
   /* Portfolio */
   .portfolio {
-    width: 50%;
-    min-width: 617px;
+    width: 100%;
+    max-width: 844px;
     justify-content: center;
     margin: 0 auto;
   }

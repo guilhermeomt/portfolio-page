@@ -3,6 +3,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  transition: all 0.2s ease;
 }
 
 *,
@@ -18,6 +19,11 @@ body {
   font-size: 16px;
   background-color: var(--color-white);
   color: var(--color-text);
+  transition: inherit;
+}
+
+body > * {
+  transition: inherit;
 }
 
 .bg-aqua {

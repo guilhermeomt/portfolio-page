@@ -11,7 +11,7 @@
   line-height: 29px;
   text-align: center;
   text-decoration: none;
-  transition: filter 0.3s;
+  transition: all 0.3s;
 }
 
 .button--primary {
@@ -19,6 +19,7 @@
   color: #fff;
 }
 
-.button:hover {
+.button--primary:hover {
   filter: saturate(2);
+  box-shadow: 0 0 0 3px var(--color-primary);
 }

@@ -36,6 +36,11 @@ p > a {
   font-weight: 500;
   transition: filter 0.5s;
   box-shadow: var(--color-primary) 0px -2px inset;
+  transition: box-shadow 0.3s;
+}
+
+p > a:hover {
+  box-shadow: none;
 }
 
 .bg-secondary {

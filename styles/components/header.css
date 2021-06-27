@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 32px;
+  color: var(--color-primary);
+  text-decoration: none;
+  letter-spacing: 1px;
+  transform: skewY(-7deg);
+}
+
+.header__opening,
+.header__closing {
+  font-size: 20px;
+}
+
+.header__name {
+  color: var(--color-text);
+}

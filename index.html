@@ -8,40 +8,61 @@
     <title>Guilherme Tavares - Desenvolvedor front-end</title>
   </head>
   <body>
-    <header>
+    <header class="header">
+      <a class="header__logo" href="/"
+        ><span class="header__opening">&lt;</span
+        ><span class="header__name">gomt</span
+        ><span class="header__closing">/&gt;</span></a
+      >
       <nav class="navbar">
-        <a class="navbar__menu" href="#">
-          <img src="assets/icons/menu.svg" alt="Menu" />
-        </a>
-
-        <ul class="navbar__list hide-to-mobile">
-          <li>
-            <div>
-              <a class="navbar__language">pt</a>
-              <span style="font-size: 8px">●</span>
-              <a class="navbar__language" href="/">en</a>
-            </div>
-          </li>
-          <li>
-            <button
-              onclick="toggleDarkMode()"
-              style="background-color: transparent; border: 0; cursor: pointer"
-            >
-              <img
-                class="hide"
-                id="light-sun"
-                src="assets/icons/sun.svg"
-                alt=""
-                width="20"
-              />
-              <img
-                id="dark-moon"
-                src="assets/icons/moon.svg"
-                alt=""
-                width="20"
-              />
-            </button>
-          </li>
+        <div>
+          <a class="navbar__language">pt</a>
+          <span style="font-size: 8px">●</span>
+          <a class="navbar__language" href="/">en</a>
+        </div>
+        <button
+          onclick="toggleDarkMode()"
+          style="background-color: transparent; border: 0; cursor: pointer"
+        >
+          <img
+            class="hide"
+            id="light-sun"
+            src="assets/icons/sun.svg"
+            alt=""
+            width="20"
+          />
+          <img id="dark-moon" src="assets/icons/moon.svg" alt="" width="20" />
+        </button>
+        <button class="navbar__menu" onclick="toggleOpenMenu()">
+          <svg
+            class="navbar__icon"
+            width="30"
+            height="20"
+            viewBox="0 0 30 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              class="navbar__path navbar__path--first"
+              d="M0 1H30"
+              stroke="#21243D"
+              stroke-width="1.6"
+            />
+            <path
+              class="navbar__path navbar__path--second"
+              d="M0 10H30"
+              stroke="#21243D"
+              stroke-width="1.6"
+            />
+            <path
+              class="navbar__path navbar__path--third"
+              d="M0 19H30"
+              stroke="#21243D"
+              stroke-width="1.6"
+            />
+          </svg>
+        </button>
+        <ul id="menu" class="navbar__list">
           <a class="navbar__link" href="#"><li>Works</li></a>
           <a class="navbar__link" href="#"><li>Blog</li></a>
           <a class="navbar__link" href="#"><li>Contact</li></a>

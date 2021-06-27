@@ -5,9 +5,20 @@
 }
 
 @media screen and (min-width: 992px) {
+  .header {
+    padding: 6px 20px;
+  }
+
   /* Navbar */
   .navbar {
+    display: flex;
+    align-items: center;
     padding: 0;
+  }
+
+  .navbar__controls {
+    display: flex;
+    margin-left: auto;
   }
 
   .navbar__menu {
@@ -16,6 +27,18 @@
 
   .navbar__list.hide-to-mobile {
     display: flex;
+  }
+
+  .navbar__list {
+    width: fit-content;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    background-color: transparent;
   }
 
   /* Intro */

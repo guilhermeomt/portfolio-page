@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.intro__img {
+.intro__figure {
   position: relative;
 }
 
@@ -21,16 +21,9 @@
   left: -5px;
   width: 174px;
   height: 180px;
-  background-color: var(--color-aqua);
+  background-color: var(--color-secondary);
   border-radius: 50%;
   z-index: -5;
-}
-
-.intro__photo::after {
-  content: '';
-  display: block;
-  width: 243px;
-  height: 243px;
 }
 
 .intro__content {

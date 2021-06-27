@@ -17,7 +17,7 @@ body {
   margin: 0;
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
   font-size: 16px;
-  background-color: var(--color-white);
+  background-color: var(--color-bg);
   color: var(--color-text);
   transition: inherit;
 }
@@ -26,8 +26,20 @@ body > * {
   transition: inherit;
 }
 
-.bg-aqua {
-  background-color: var(--color-aqua);
+a {
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+p > a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: filter 0.5s;
+  box-shadow: var(--color-primary) 0px -2px inset;
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
 }
 
 .horizontal-line {

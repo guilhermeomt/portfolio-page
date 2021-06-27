@@ -1,10 +1,10 @@
 :root {
-  --color-primary: #ff6464;
+  --color-bg: #fff;
   --color-text: #21243d;
-  --color-aqua: #edf7fa;
+  --color-primary: #ff6464;
+  --color-secondary: #edf7fa;
   --color-blue: #142850;
   --color-black: #000;
   --color-gray: #e0e0e0;
   --color-light-gray: #8695a4;
-  --color-white: #fff;
 }

@@ -1,7 +1,7 @@
 html.dark-theme {
-  --color-white: #181818;
+  --color-bg: #181818;
   --color-text: #fff;
-  --color-aqua: #1c2426;
-  --color-black: #fff;
-  --color-blue: #fff;
+  --color-secondary: #1c2426;
+  --color-black: var(--color-text);
+  --color-blue: #7573df;
 }

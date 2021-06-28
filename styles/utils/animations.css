@@ -3,6 +3,11 @@
   animation: wave 1s ease-in-out infinite;
 }
 
+.title-section-animation {
+  display: inline-block;
+  animation: title-section 1s ease-in-out forwards;
+}
+
 @keyframes wave {
   0% {
     transform: rotate(0deg);
@@ -17,5 +22,9 @@
   }
 }
 
-@keyframes fly {
+@keyframes title-section {
+  100% {
+    transform: rotate(-90deg) translate(-180px, -200px);
+    font-size: 32px;
+  }
 }

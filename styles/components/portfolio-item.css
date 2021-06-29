@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--color-bg);
-  padding: 0 18px;
+  padding: 0 10px;
 }
 
 .portfolio-item__description {
@@ -71,5 +71,6 @@
 .portfolio-item__content {
   margin-top: 24px;
   margin-bottom: 5px;
+  text-align: center;
   line-height: 24px;
 }

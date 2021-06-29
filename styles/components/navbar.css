@@ -38,6 +38,15 @@
 
 .navbar__language {
   font-size: 12px;
+  text-decoration: none;
+}
+
+.navbar__language.disabled {
+  color: #c4c4c4;
+  cursor: not-allowed;
+}
+
+.navbar__language:not(:disabled):hover {
   text-decoration: underline;
 }
 

@@ -28,6 +28,7 @@
   height: 230px;
   width: 339px;
   border-radius: 6px;
+  object-fit: cover;
 }
 
 .portfolio-item__text {

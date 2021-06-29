@@ -1,4 +1,14 @@
 const htmlNode = document.documentElement;
+const navbarLinks = document.querySelectorAll('.navbar__link');
+
+function scrollSmooth() {
+  navbarLinks.forEach(navbarLink => {
+    navbarLink.addEventListener('click', (e) => {
+      toggleOpenMenu();
+      htmlNode.classList.remove('no-scroll');
+    })
+  })
+}
 
 function toggleOpenMenu() {
   const menuElement = document.querySelector('#menu');
@@ -27,3 +37,4 @@ if (localStorage.getItem('darkMode') == 'enabled') {
   document.querySelector('#dark-moon').classList.toggle('hide');
 }
 
+scrollSmooth();

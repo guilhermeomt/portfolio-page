@@ -19,7 +19,7 @@
         <div>
           <a class="navbar__language" href="/">🇧🇷</a>
           <span style="font-size: 8px">●</span>
-          <a class="navbar__language" href="/">🇺🇸</a>
+          <a class="navbar__language" href="en.html">🇺🇸</a>
         </div>
         <button
           onclick="toggleDarkMode()"
@@ -64,9 +64,9 @@
           </svg>
         </button>
         <ul id="menu" class="navbar__list">
-          <a class="navbar__link" href="#blog"><li>Blog</li></a>
-          <a class="navbar__link" href="#portfolio"><li>Portfólio</li></a>
-          <a class="navbar__link disabled" href="#"><li>Contato</li></a>
+          <a class="navbar__link" href="#"><li>Portfólio</li></a>
+          <a class="navbar__link" href="#"><li>Blog</li></a>
+          <a class="navbar__link" href="#"><li>Contato</li></a>
         </ul>
       </nav>
     </header>
@@ -86,73 +86,75 @@
           Desenvolvedor Front End
         </h1>
         <p class="intro__subtitle">
-          Bem vindo, visitante! Me chamo Guilherme Oliveira Mussa Tavares e
-          tenho 22 anos. Estou cursando atualmente Ciência da Computação na
-          <a
-            href="https://uenf.br/portal/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Universidade Estadual do Fluminense Darcy Ribeiro (UENF)</a
-          >
-          e me especializando na área de desenvolvimento web com foco em
-          front-end.
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit <a href=".">officia consequat duis enim</a> velit mollit.
+          <a href="">Exercitation veniam consequat sunt</a> nostrud amet.
         </p>
 
-        <a
-          class="button button--primary"
-          href="/assets/files/CV-Guilherme.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Baixar CV</a
-        >
+        <a class="button button--primary" href="#"> Download Resume</a>
       </div>
     </section>
 
     <div class="bg-secondary">
-      <section id="blog" class="blog-posts">
+      <section class="blog-posts">
         <h2 class="blog-posts__title">🚀 Blog</h2>
+        <ul class="blog-posts__list">
+          <li class="post-card">
+            <h2 class="post-card__title">How to use CSS Grid and Flexbox</h2>
+            <div class="post-card__description">
+              <p>12 Feb 2021</p>
+              <span>|</span>
+              <p>CSS, Front End</p>
+            </div>
+            <p class="post-card__content">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </li>
 
-        <h2 style="padding: 120px 0; font-size: 28px">🚧 Em construção</h2>
+          <li class="post-card">
+            <h2 class="post-card__title">I’m launching Maratonas Academy</h2>
+            <div class="post-card__description">
+              <p>12 Feb 2021</p>
+              <span>|</span>
+              <p>Startup, EdTech</p>
+            </div>
+            <p class="post-card__content">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </li>
+        </ul>
       </section>
     </div>
 
-    <section id="portfolio" class="portfolio">
-      <h2 class="portfolio__title">💡 Portfólio</h2>
+    <section class="portfolio">
+      <h2 class="portfolio__title">💡 Featured works</h2>
       <ul class="portfolio__list">
         <li class="portfolio-item">
-          <div class="portfolio-item__description">
-            <img
-              class="portfolio-item__img"
-              src="assets/images/netflix-cover.png"
-              alt="Hub Maratonas Academy"
-            />
-            <div class="portfolio-item__text">
-              <h2 class="portfolio-item__title">
-                Clone de Interface da Netflix
-              </h2>
-              <div class="portfolio-item__info">
-                <p class="portfolio-item__badge">2021</p>
-                <p class="portfolio-item__type">Web App</p>
+          <a class="portfolio-item__link" href="portfolio-detail.html">
+            <div class="portfolio-item__description">
+              <img
+                class="portfolio-item__img"
+                src="assets/images/portfolio-item-cover1.png"
+                alt="Hub Maratonas Academy"
+              />
+              <div class="portfolio-item__text">
+                <h2 class="portfolio-item__title">Hub Maratonas Academy</h2>
+                <div class="portfolio-item__info">
+                  <p class="portfolio-item__badge">2021</p>
+                  <p class="portfolio-item__type">Web App</p>
+                </div>
+                <p class="portfolio-item__content">
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
               </div>
-              <p class="portfolio-item__content">
-                Um clone da interface da Netflix voltado para dispositivos
-                móveis. Projeto desenvolvido ao longo da maratona "Clonando a
-                Netflix" da
-                <a
-                  href="https://maratonas.academy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Maratonas Academy</a
-                >.
-                <a
-                  href="https://netflix.guilhermeomt.dev"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Clique aqui para ver o site.</a
-                >
-              </p>
             </div>
-          </div>
+          </a>
           <hr class="horizontal-line" />
         </li>
       </ul>
@@ -162,7 +164,7 @@
       <div class="footer__social">
         <a
           class="footer__link"
-          href="https://github.com/guilhermeomt"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >

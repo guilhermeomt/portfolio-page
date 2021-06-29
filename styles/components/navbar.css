@@ -58,7 +58,12 @@
   color: var(--color-text);
 }
 
-.navbar__link::after {
+.navbar__link.disabled {
+  color: #c4c4c4;
+  cursor: not-allowed;
+}
+
+.navbar__link:not(.disabled):after {
   content: '';
   border-bottom: solid 4px var(--color-primary);
   position: absolute;

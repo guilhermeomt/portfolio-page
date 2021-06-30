@@ -46,7 +46,7 @@ p > a {
 }
 
 p > a:hover {
-  box-shadow: none;
+  box-shadow: #ff4343 0px -2px inset;
 }
 
 .no-scroll {

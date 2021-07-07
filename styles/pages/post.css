@@ -1,0 +1,10 @@
+@import '../utils/variables.css';
+@import '../utils/general.css';
+
+@import '../components/header.css';
+@import '../components/navbar.css';
+@import '../components/post.css';
+@import '../components/footer.css';
+
+@import '../utils/responsive.css';
+@import '../themes/dark.css';

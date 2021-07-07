@@ -14,12 +14,24 @@
 
 .post-card__description {
   display: flex;
-  align-items: center;
-  gap: 24px;
+  flex-direction: column;
 }
 
 .post-card__description > span {
   color: var(--color-black);
+}
+
+.post-card__date {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.post-card__tag-list {
+  margin: 10px 0;
+}
+
+.post-card__hashtag {
+  color: #c4c4c4;
 }
 
 .post-card__content {

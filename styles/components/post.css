@@ -1,0 +1,78 @@
+.post {
+  padding: 0 58px;
+  margin-bottom: 70px;
+}
+
+.post__info {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.post__tags {
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.post__content p {
+  margin: 0;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+}
+
+.post__content h1 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-bottom: 0;
+}
+
+.post__content h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: left;
+  margin: 0;
+}
+
+blockquote.ltag__twitter-tweet {
+  background: white;
+  max-width: 500px;
+  font-size: 0.75em;
+  line-height: 1.35em;
+  border-radius: 3px;
+  margin: 1.6em auto;
+  min-height: 60px;
+  cursor: pointer;
+  padding: 0px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.18);
+}
+
+.ltag__twitter-tweet__header {
+  height: 52px;
+}
+
+.ltag__twitter-tweet__profile-image {
+  height: 36px;
+  min-height: 36px;
+  width: 36px;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #ececec;
+  margin: 0;
+}
+
+.ltag__twitter-tweet__body {
+  color: #1c2022;
+  font-size: 16px;
+  line-height: 22px;
+  padding: calc(0.3vw + 13px) calc(0.3vw + 13px) 0px;
+}

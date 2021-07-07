@@ -37,7 +37,8 @@ a {
   cursor: pointer;
 }
 
-p > a {
+p > a,
+li > a {
   text-decoration: none;
   font-weight: 500;
   transition: filter 0.5s;
@@ -45,7 +46,8 @@ p > a {
   transition: box-shadow 0.3s;
 }
 
-p > a:hover {
+p > a:hover,
+li > a:hover {
   box-shadow: #ff4343 0px -2px inset;
 }
 

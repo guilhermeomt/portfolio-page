@@ -8,3 +8,7 @@
 
 @import '../utils/responsive.css';
 @import '../themes/dark.css';
+
+.footer {
+  margin-top: 50px;
+}

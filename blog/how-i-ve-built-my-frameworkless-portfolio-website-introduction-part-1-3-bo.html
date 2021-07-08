@@ -6,6 +6,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guilherme Tavares - Desenvolvedor front-end</title>
+    <style>
+      code {
+        color: var(--color-primary);
+      }
+
+      .ltag__twitter-tweet {
+        background: white;
+        max-width: 500px;
+        font-size: 0.75em;
+        line-height: 1.35em;
+        border-radius: 3px;
+        margin: 1.6em auto;
+        min-height: 60px;
+        cursor: pointer;
+        padding: 0px;
+        border: 1px solid #dbdbdb;
+        box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.18);
+      }
+
+      .ltag__twitter-tweet__header {
+        position: relative;
+        height: 52px;
+      }
+
+      .ltag__twitter-tweet__profile-image {
+        height: 36px;
+        min-height: 36px;
+        width: 36px;
+        border-radius: 50px;
+        position: absolute;
+        left: calc(0.3vw + 13px);
+        top: calc(0.3vw + 13px);
+        background-color: #ececec;
+        margin: 0;
+      }
+
+      .ltag__twitter-tweet__full-name {
+        color: #1c2022;
+        position: absolute;
+        left: calc(0.3vw + 57px);
+        top: calc(0.3vw + 13px);
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .ltag__twitter-tweet__username {
+        position: absolute;
+        left: calc(0.3vw + 57px);
+        top: calc(0.3vw + 33px);
+        color: #697882;
+        font-size: 14px;
+      }
+
+      .ltag__twitter-tweet a {
+        color: #55acee;
+      }
+
+      .ltag__twitter-tweet__twitter-logo {
+        position: absolute;
+        right: calc(0.3vw + 8px);
+        top: 20px;
+        left: auto;
+      }
+
+      .ltag__twitter-tweet__twitter-logo img {
+        height: 24px;
+        min-height: 24px;
+        max-width: 24px;
+        display: inline-block;
+        width: 36px;
+        margin: auto;
+      }
+
+      .ltag__twitter-tweet__body {
+        color: #1c2022;
+        font-size: 16px;
+        line-height: 22px;
+        padding: calc(0.3vw + 13px) calc(0.3vw + 13px) 0px;
+      }
+
+      .ltag__twitter-tweet__date {
+        font-size: 14px;
+        color: #697882;
+        margin-top: 3px;
+        padding: 0px calc(0.3vw + 13px);
+      }
+
+      .ltag__twitter-tweet__actions {
+        margin: 6px auto 0px;
+        padding: 0px calc(0.3vw + 13px) 5px;
+        color: #aab8c2;
+        font-size: 14px;
+      }
+
+      .ltag__twitter-tweet__actions__button {
+        width: 18px;
+        height: 22px;
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 2px;
+        vertical-align: -7px;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -76,11 +179,11 @@
     </header>
 
     <section class="post">
-      <img src="" alt="Cover Image" />
+      <div id="post-cover" class="post__cover"></div>
       <h2 id="post-title" class="post__title"></h2>
       <div class="post__info">
         <p id="post-date" class="post__date"></p>
-        <p class="post__tags"></p>
+        <p id="post-tags" class="post__tags"></p>
       </div>
 
       <div id="post-content" class="post__content"></div>
@@ -184,10 +287,15 @@
     async function getPostData() {
       const response = await fetch('https://dev.to/api/articles/743874');
       const postData = await response.json();
-      console.log(postData);
+
       const titleElement = document.querySelector('#post-title');
       const dateElement = document.querySelector('#post-date');
       const contentElement = document.querySelector('#post-content');
+      const coverImageContainerElement = document.querySelector('#post-cover');
+      const tagsElement = document.querySelector('#post-tags');
+      const coverImageElement = document.createElement('img');
+
+      coverImageElement.setAttribute('src', postData.cover_image);
 
       const date = new Date(postData.published_timestamp);
       const options = {
@@ -198,8 +306,15 @@
       const formattedDate = new Intl.DateTimeFormat('pt-BR', options).format(
         date
       );
+
+      const tagList = postData.tags.map(
+        (tag) => `<span class="post__hashtag">#</span>${tag}`
+      );
+
+      coverImageContainerElement.appendChild(coverImageElement);
       titleElement.innerHTML = postData.title;
       dateElement.innerHTML = formattedDate;
+      tagsElement.innerHTML = tagList.join(', ');
       contentElement.innerHTML = postData.body_html;
     }
 
